@@ -1,7 +1,7 @@
 public class DebugThree4
-// This program calculates tutition bills as credits times rate per credit hour
+// This program calculates tuition bills as credits times rate per credit hour
 {
-   public static void main(String args[])
+   public static void main(String[] args)
    {
       int myCredits = 13;
       int yourCredits = 17;
@@ -9,10 +9,11 @@ public class DebugThree4
       System.out.println("My tuition:");
       tuitionBill(myCredits, rate);
       System.out.println("Your tuition:");
-      tuitionBill(credits, rate);
+      tuitionBill(yourCredits, rate);
    }
-   public static void tuitionBill(int c, double r)
+   public static void tuitionBill(int credit, double rate)
    {
-      System.out.println("Total due ");
+      double total = credit * rate;
+      System.out.println("Total due " + total);
    }
 }
